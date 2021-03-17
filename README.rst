@@ -1,6 +1,6 @@
 Django reCAPTCHA
 ================
-**Django reCAPTCHA form field/widget integration app.**
+**Django reCAPTCHA form field/widget integration with tarteaucitron.js app.**
 
 .. image:: https://travis-ci.org/praekelt/django-recaptcha.svg?branch=develop
     :target: https://travis-ci.org/praekelt/django-recaptcha
@@ -97,6 +97,7 @@ The quickest way to add reCAPTCHA to a form is to use the included
     class FormWithCaptcha(forms.Form):
         captcha = ReCaptchaField()
 
+Be sure to include the captcha field in your forms. There are many ways to add fields to forms in Django. We recommend you refer to the `form rendering options <https://docs.djangoproject.com/en/dev/topics/forms/#form-rendering-options>`_ and `rendering fields manually <https://docs.djangoproject.com/en/dev/topics/forms/#rendering-fields-manually>`_ sections of the `official Django documentation for forms <https://docs.djangoproject.com/en/dev/topics/forms>`_.
 
 To allow for runtime specification of keys you can optionally pass the
 ``private_key`` or ``public_key`` parameters to the constructor. For example:
@@ -151,9 +152,9 @@ widget, containing a dictionary of options. For example:
     # The ReCaptchaV2Invisible widget
     # ignores the "data-size" attribute in favor of 'data-size="invisible"'
 
-The reCAPTCHA api supports several `paramaters
+The reCAPTCHA api supports several `parameters
 <https://developers.google.com/recaptcha/docs/display#js_param>`_. To customise
-the paramaters that get sent along pass an ``api_params`` paramater to the
+the parameters that get sent along pass an ``api_params`` paramater to the
 widget, containing a dictionary of options. For example:
 
 .. code-block:: python

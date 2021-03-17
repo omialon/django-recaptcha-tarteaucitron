@@ -6,14 +6,14 @@ long_desc = open('README.rst', 'rb').read().decode('utf-8') + '\n\n' + \
             open('CHANGELOG.rst', 'rb').read().decode('utf-8')
 
 setup(
-    name='django-recaptcha',
+    name='django-recaptcha-tarteaucitron',
     version='2.0.6',
-    description='Django recaptcha form field/widget app.',
+    description='Django recaptcha form field/widget integration with tarteaucitron.js app.',
     long_description=long_desc,
     author='Praekelt Consulting',
     author_email='dev@praekelt.com',
     license='BSD',
-    url='http://github.com/praekelt/django-recaptcha',
+    url='http://github.com/omialon/django-recaptcha-tarteaucitron',
     packages=find_packages(),
     install_requires=[
         'django>1.11,<4.0',
