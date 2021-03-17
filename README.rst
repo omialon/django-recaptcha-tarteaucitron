@@ -1,6 +1,6 @@
 Django reCAPTCHA
 ================
-**Django reCAPTCHA form field/widget integration app.**
+**Django reCAPTCHA form field/widget integration with tarteaucitron.js app.**
 
 .. image:: https://travis-ci.org/praekelt/django-recaptcha.svg?branch=develop
     :target: https://travis-ci.org/praekelt/django-recaptcha
